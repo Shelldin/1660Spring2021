@@ -1,6 +1,6 @@
 //Maya ASCII 2020 scene
-//Name: SwordOfOmens002.ma
-//Last modified: Tue, Feb 16, 2021 04:30:03 AM
+//Name: SwordOfOmens004.ma
+//Last modified: Tue, Feb 16, 2021 04:40:06 AM
 //Codeset: 1252
 requires maya "2020";
 currentUnit -l centimeter -a degree -t film;
@@ -9,17 +9,17 @@ fileInfo "product" "Maya 2020";
 fileInfo "version" "2020";
 fileInfo "cutIdentifier" "201911140446-42a737a01c";
 fileInfo "osv" "Microsoft Windows 10 Technical Preview  (Build 18363)\n";
-fileInfo "UUID" "2435CF74-49D4-A25E-6DCE-9E9CEA67CBDA";
+fileInfo "UUID" "FF687425-47DE-034F-5BFB-858CCDD60B91";
 createNode transform -s -n "persp";
 	rename -uid "44BD1E5A-4653-3371-9195-55A86B71865C";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 7.1834607163238244 13.975591702768162 -5.1944561743247544 ;
-	setAttr ".r" -type "double3" -48.938352720740198 -335.79999999989798 1.743495524916888e-15 ;
+	setAttr ".t" -type "double3" 4.2338314205472978 10.837943114405112 -8.4054474009064073 ;
+	setAttr ".r" -type "double3" -59.138352719999297 13.800000000002859 -3.2750925873603244e-15 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "D82CDFAF-4FE3-CA87-4048-38B87F957404";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 15.821630764435842;
+	setAttr ".coi" 10.302881525728164;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -65,7 +65,7 @@ createNode camera -s -n "sideShape" -p "side";
 	setAttr -k off ".v";
 	setAttr ".rnd" no;
 	setAttr ".coi" 1000.1;
-	setAttr ".ow" 16.191345049564845;
+	setAttr ".ow" 20.45500777883403;
 	setAttr ".imn" -type "string" "side";
 	setAttr ".den" -type "string" "side_depth";
 	setAttr ".man" -type "string" "side_mask";
@@ -2005,7 +2005,7 @@ createNode mesh -n "pPlaneShape1" -p "pPlane1";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
-	setAttr ".pv" -type "double2" 0.5 0.5 ;
+	setAttr ".pv" -type "double2" 0 0.50399994850158691 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr ".cuvs" -type "string" "map1";
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
@@ -2036,7 +2036,7 @@ createNode mesh -n "pPlaneShape1" -p "pPlane1";
 	setAttr ".pt[41]" -type "float3" 8.0491169e-16 0 0.031107653 ;
 	setAttr ".pt[49]" -type "float3" 0.084822528 0 -0.03664276 ;
 	setAttr ".pt[51]" -type "float3" 0.068794116 0 -0.052587859 ;
-	setAttr ".pt[55]" -type "float3" 0 0 0.0049647363 ;
+	setAttr ".pt[55]" -type "float3" -8.8817842e-16 0 0.0049647363 ;
 	setAttr ".pt[71]" -type "float3" -0.1886774 0 -0.01929592 ;
 	setAttr ".pt[74]" -type "float3" 0.43002114 0 -0.0037473515 ;
 createNode lightLinker -s -n "lightLinker1";
@@ -5568,4 +5568,4 @@ connectAttr "pCubeShape2.iog" ":initialShadingGroup.dsm" -na;
 connectAttr "pCubeShape3.iog" ":initialShadingGroup.dsm" -na;
 connectAttr "pCubeShape4.iog" ":initialShadingGroup.dsm" -na;
 connectAttr "pPlaneShape1.iog" ":initialShadingGroup.dsm" -na;
-// End of SwordOfOmens002.ma
+// End of SwordOfOmens004.ma
